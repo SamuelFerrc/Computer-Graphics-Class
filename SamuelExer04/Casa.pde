@@ -19,7 +19,7 @@ void setup() {
   float [] yAx = {0,0,1,1,0,0,1,1,0.5};
   float [] zAx = {0,0,0,0,1,1,1,1,1.5};
   
-  float escala = 50;
+  float escala = 1;
   for(int i =0 ; i < xAx.length;i++) {
     output.println(xAx[i] *escala+ "\t"+ yAx[i] *escala +"\t" + zAx[i] * escala);
   }
