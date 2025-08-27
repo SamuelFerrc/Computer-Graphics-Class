@@ -20,24 +20,15 @@ void setup()
   
   int amplitude = 25;
   
-  for(int i =-500; i < 500;i++)
+  for(int i =-1000; i < 1000;i++)
   {
-    for(int j = -500 ; j < 500;j++)
+    for(int j = -1000 ; j < 1000;j++)
     {
-        float z =amplitude* cos(radians(i * 5));
+        float z =i %2 == 0? amplitude* cos(radians(i * 5)): amplitude* sin(radians(i * 5));
         output.println(i + "\t"+ j +"\t" + z + "\t255\t0\t0");
     }
   }
   
-  output.flush();
-  for(int i =-500; i < 500;i++)
-  {
-    for(int j = -500 ; j < 500;j++)
-    {
-        float z =amplitude* sin(radians(i * 5));
-        output.println(i + "\t"+ j +"\t" + z+"\t0\t0\t255");
-    }
-  }
   output.flush();
 
   

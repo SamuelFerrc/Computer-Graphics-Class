@@ -19,7 +19,7 @@ void setup()
   {
     for(int j = -500 ; j < 500;j++)
     {
-        float z =25* sin(radians(i + j));
+        float z =50* cos(radians((i*i + j*j) * 0.1));
         output.println(i + "\t"+ j +"\t" + z);
     }
   }
